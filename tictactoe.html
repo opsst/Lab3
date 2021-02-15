@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+<script src="tic-tac-toe.js" defer></script>
+<style>
+    .tic-tac{
+        width: 100px;
+        height: 100px;
+    }
+    .tic-tac-mid{
+        width: 108px;
+        height: 100px;
+    }
+    video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+</style>
+
+<body>
+    
+    <div class="container-fluid text-center">
+        
+        <br><br>
+        <h1 class="display-2 text-info">Tic-Tac-Toe</h1>
+        <div style="height: 60px;"></div>
+        <br>
+        <div class="align-self-center">
+        <div class="row justify-content-center">
+            <div class=" tic-tac border border-5 border-start-0 border-top-0 border-end-0 border-warning" >
+                <img src="https://www.panelplus.co.th/uploads/collection/5be55-white-mk630n.jpg"style=" margin-left:-0.1em; margin-top:0.5em;"width="75px" height="75px" id="s1">
+            </div>
+            <div class=" tic-tac-mid border border-5 border-top-0 border-warning">
+                <img src="https://www.panelplus.co.th/uploads/collection/5be55-white-mk630n.jpg"style=" margin-left:-0.05em; margin-top:0.5em;"width="75px" height="75px" id="s2">
+            </div>
+            <div class=" tic-tac border border-5 border-start-0 border-top-0 border-end-0 border-warning">
+                 <img src="https://www.panelplus.co.th/uploads/collection/5be55-white-mk630n.jpg"style=" margin-left:0.1em; margin-top:0.5em;"width="75px" height="75px" id="s3">
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="tic-tac border border-5 border-start-0 border-top-0 border-end-0 border-warning">
+                <img src="https://www.panelplus.co.th/uploads/collection/5be55-white-mk630n.jpg"style=" margin-left:-0.1em; margin-top:0.5em;"width="75px" height="75px" id="s4">
+            </div>
+            <div class="tic-tac-mid border border-5 border-top-0 border-warning" >
+                <img src="https://www.panelplus.co.th/uploads/collection/5be55-white-mk630n.jpg" onclick="" style="margin-left:-0.05em; margin-top:0.5em;"width="75px" height="75px" class="canplay" id="s5">
+            </div>
+            <div class="tic-tac border border-5 border-start-0 border-top-0 border-end-0 border-warning" >
+                <img src="https://www.panelplus.co.th/uploads/collection/5be55-white-mk630n.jpg"style=" margin-left:0.1m; margin-top:0.5em;" width="75px" height="75px" class="canplay" id="s6">
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="tic-tac border border-5 border-start-0 border-top-0 border-end-0 border-bottom-0 border-warning">
+                <img src="https://www.panelplus.co.th/uploads/collection/5be55-white-mk630n.jpg"style=" margin-left:-0.1em; margin-top:0.6em;" width="75px" height="75px" id="s7">
+            </div>
+            <div class="tic-tac-mid border border-5 border-top-0 border-bottom-0 border-warning">
+                <img src="https://www.panelplus.co.th/uploads/collection/5be55-white-mk630n.jpg"style="margin-left:-0.05em; margin-top:0.6em;" width="75px" height="75px"  id="s8">
+            </div>
+            <div class="tic-tac border border-5 border-start-0 border-top-0 border-end-0 border-bottom-0 border-warning">
+                <img src="https://www.panelplus.co.th/uploads/collection/5be55-white-mk630n.jpg"style=" margin-left:0.1em; margin-top:0.6em;" width="75px" height="75px"id="s9">
+            </div>
+        </div>
+    </div><br><br><br><br>
+        <h1 id="displaying"></h1>
+        <br>
+        <button class="btn btn-primary" onClick="window.location.reload();">New Game</button>
+        
+    </div>
+    
+    
+    
+</body>
+</html>
